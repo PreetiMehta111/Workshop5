@@ -1,10 +1,33 @@
-﻿namespace Task_2
+﻿namespace Task2
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Car car = new Car
+            {
+                Brand = "Toyota",
+                Speed = 120,
+                Seats = 5
+            };
+
+            Motorcycle bike = new Motorcycle
+            {
+                Brand = "Honda",
+                Speed = 150,
+                HasCarrier = true
+            };
+
+            // Base class methods – reuse
+            car.Start();
+            car.DisplayInfo();
+            car.Stop();
+
+            Console.WriteLine();
+
+            bike.Start();
+            bike.DisplayInfo();
+            bike.Stop();
         }
     }
 }
