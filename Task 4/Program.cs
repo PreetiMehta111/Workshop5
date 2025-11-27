@@ -1,10 +1,23 @@
-﻿namespace Task_4
+﻿namespace Task4
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Car car = new Car();
+            Bike bike = new Bike();
+
+            Console.WriteLine("Car object:");
+            car.Display();
+            car.StartEngine();
+            car.StopEngine();
+
+            Console.WriteLine();
+
+            Console.WriteLine("Bike object:");
+            bike.Display();
+            bike.StartEngine();
+            bike.StopEngine();
         }
     }
 }
